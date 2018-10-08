@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% block header %}
+      {% include '../_includes/head.html' %}
+      {% block header_includes %}{% endblock %}
+    {% endblock %}
+  </head>
+  <body id="page-{{id}}"
+        class="page-{{id}} {% if header_style %}{{header_style}}{% endif %}"
+        {% block body_attributes %}{% endblock %}>
+		{% block page %}
+			{% block main %}{% endblock %}
+		{% endblock %}
+
+	  {% block footer %}
+	    {% include '../_includes/scripts.html' %}
+	    {% block scripts %}{% endblock %}
+	  {% endblock %}
+
+  </body>
+</html>
