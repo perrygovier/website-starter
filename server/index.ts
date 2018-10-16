@@ -22,6 +22,10 @@ expressNunjucks(app, {
 
 app.use(router(app));
 
+app.use(express.static(__dirname + '/../static', {
+  etag: true
+}));
+
 app.listen(PORT, function() {
   // Render some console log output
   console.log('Listening on port ' + PORT);
