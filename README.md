@@ -1,2 +1,2 @@
-# south-madison-voters
-A website for South Madison Voters
+# website-starter
+A basic node, typescript, express, nunjucks, scss, bootstrap website starter
